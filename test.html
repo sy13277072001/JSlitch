@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    x = [{"replace":"about:blank","extra":"adkillrule","find":"https?:\\/\\/val[fcopb]\\.atm\\.youku\\.com\\/v[fcopb]","name":"youkujson"},{"exfind":"(bili|acfun)","css":".danmuoff .playArea .player #movie_player{height: 92%; !important;}","name":"youkuloader","replace":"http://opengg.guodafanli.com/adkiller/loader.swf","extra":"adkillrule","find":"https?:\\/\\/static\\.youku\\.com(\\/v[\\d\\.]*)?\\/v\\/swf\\/loaders?[^\\.]*\\.swf"},{"exfind":"(bili|acfun)","css":".danmuoff .playArea .player #movie_player{height: 92%; !important;}","name":"youkuplayer","replace":"http://opengg.guodafanli.com/adkiller/player.swf","extra":"adkillrule","find":"https?:\\/\\/static\\.youku\\.com(\\/v[\\d\\.]*)?\\/v\\/swf\\/(q?player[^\\.]*|\\w{13})\\.swf"},{"replace":"http://opengg.guodafanli.com/adkiller/tudou.swf","extra":"adkillrule","exfind":"narutom","find":"https?:\\/\\/js\\.tudouui\\.com\\/.*PortalPlayer[^\\.]*\\.swf","name":"tudou"},{"replace":"http://opengg.guodafanli.com/adkiller/letv.swf","extra":"adkillrule","exfind":"(bili|acfun|(comic|hz)\\.letv|duowan)","find":"https?:\\/\\/.*letv[\\w]*\\.com\\/.*\\/((?!(Live|seed|Disk|SSDK))(S[\\w]{2,3})?(?!Live)[\\w]{4}|swf|(!(\\d+)\\/)VLetv)Player[^\\.]*\\.swf","name":"letv"},{"replace":"http://www.le.com/cmsdata/playerapi/pccs_sdk_20141113.xml","extra":"adkillrule","find":"https?:\\/\\/www.le(tv)?.com\\/.*\\/playerapi\\/pccs_(?!(.*live|sdk)).*_?(\\d+)\\.xml","name":"letvpccs"},{"replace":"http://opengg.guodafanli.com/adkiller/player4player2.swf","extra":"adkillrule","find":"https?:\\/\\/player\\.pplive\\.cn\\/ikan\\/.*\\/player4player2\\.swf","name":"pplive"},{"replace":"http://opengg.guodafanli.com/adkiller/pptv.in.Live.swf","extra":"adkillrule","find":"https?:\\/\\/player\\.pplive\\.cn\\/live\\/.*\\/player4live2\\.swf","name":"pplive_live"},{"replace":"http://opengg.17xiuwang.com/adkiller/iqiyi5.swf","extra":"adkillrule","exfind":"https?:\\/\\/(baidu|61|178)\\.iqiyi\\.com|weibo|bilibili|acfun|(music|tieba)\\.baidu","find":"https?:\\/\\/www\\.iqiyi\\.com\\/(player\\/\\d+\\/Player|common\\/flashplayer\\/\\d+\\/(Main|Coop|share|Enjoy)?(Player[^\\.]*|\\d+(f98c2359|5b45a8bb)))\\.swf","name":"iqiyi"},{"replace":"http://opengg.guodafanli.com/adkiller/pps.swf","extra":"adkillrule","find":"https?:\\/\\/www\\.iqiyi\\.com\\/player\\/cupid\\/.*\\/pps[\\w]+.swf","name":"pps"},{"replace":"about:blank","extra":"adkillrule","find":"https?:\\/\\/www\\.iqiyi\\.com\\/common\\/.*\\/am[^\\.]*.swf","name":"pps_live"},{"replace":"http://opengg.guodafanli.com/adkiller/sohu_live.swf","extra":"adkillrule","exfind":"(bili|acfun)","find":"https?:\\/\\/(tv\\.sohu\\.com\\/upload\\/swf\\/(?!(ap|56|qianfan)).*\\d+|(\\d+\\.){3}\\d+(:\\d+)?\\/(web|wp8|test)player)\\/(Main|PlayerShell)[^\\.]*\\.swf","name":"sohu_live"}];
+    document.write("<pre>");
+    document.writeln("hello");
+    document.writeln("hello2");
+    for(i in x) {
+        document.writeln(JSON.stringify(x[i]) );
+    }
+</script>
+</body>
+</html>
